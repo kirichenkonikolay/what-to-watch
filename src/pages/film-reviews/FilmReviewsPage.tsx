@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import MoreLikeThis from "../../components/MoreLikeThis";
 import Header from "../../components/Header";
 
-const FilmReviews: React.FC = () => {
+const FilmReviewsPage: React.FC = () => {
   return (
     <>
       <section className="film-card film-card--full">
@@ -169,4 +169,4 @@ const FilmReviews: React.FC = () => {
   );
 }
 
-export default FilmReviews;
+export default FilmReviewsPage;

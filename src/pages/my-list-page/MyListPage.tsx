@@ -5,7 +5,7 @@ import FilmsList from "../../components/FilmsList";
 import films from "../../utils/films";
 import UserBlock from "../../components/UserBlock";
 
-const MyList: React.FC = () => {
+const MyListPage: React.FC = () => {
   return (
     <div className="user-page">
       <header className="page-header user-page__head">
@@ -24,4 +24,4 @@ const MyList: React.FC = () => {
   );
 }
 
-export default MyList;
+export default MyListPage;

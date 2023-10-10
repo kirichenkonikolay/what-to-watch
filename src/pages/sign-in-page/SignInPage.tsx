@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../components/Logo";
 import Footer from "../../components/Footer";
 
-const SignIn: React.FC = () => {
+const SignInPage: React.FC = () => {
   return (
     <div className="user-page">
       <header className="page-header user-page__head">
@@ -35,4 +35,4 @@ const SignIn: React.FC = () => {
   );
 }
 
-export default SignIn;
+export default SignInPage;

@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import MoreLikeThis from "../../components/MoreLikeThis";
 
-const Film: React.FC = () => {
+const FilmPage: React.FC = () => {
   return (
     <>
       <section className="film-card film-card--full">
@@ -101,4 +101,4 @@ const Film: React.FC = () => {
   );
 }
 
-export default Film;
+export default FilmPage;

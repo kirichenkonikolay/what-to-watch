@@ -2,7 +2,7 @@ import React from 'react';
 import UserBlock from "../../components/UserBlock";
 import Rating from "../../components/Rating";
 
-const AddReview: React.FC = () => {
+const AddReviewPage: React.FC = () => {
   return(
     <section className="film-card film-card--full">
       <div className="film-card__header">
@@ -53,4 +53,4 @@ const AddReview: React.FC = () => {
   );
 }
 
-export default AddReview;
+export default AddReviewPage;
