@@ -1,6 +1,11 @@
 import React from 'react';
 
-const FilmCard: React.FC = (props) => {
+interface FilmCardProps {
+  title: string;
+  poster: string;
+}
+
+const FilmCard: React.FC = (props: FilmCardProps) => {
   const {title, poster} = props;
 
   return (

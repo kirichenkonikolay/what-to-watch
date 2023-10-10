@@ -2,8 +2,15 @@ import React from 'react';
 import FilmsList from '../../components/FilmsList';
 import UserBlock from "../../components/UserBlock";
 import Footer from "../../components/Footer";
+import films from "../../utils/films";
 
-const Main: React.FC = (props) => {
+interface MainProps {
+  title: string;
+  genre: string;
+  date: string;
+}
+
+const Main: React.FC = (props: MainProps) => {
   const {title, genre, date} = props;
 
   return (
@@ -98,7 +105,7 @@ const Main: React.FC = (props) => {
             </li>
           </ul>
 
-          <FilmsList />
+          <FilmsList films={films} />
 
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>

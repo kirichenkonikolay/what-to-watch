@@ -1,6 +1,6 @@
 import React from "react";
 
-type RatingStarProps = {
+interface RatingStarProps {
   starCount: number;
 }
 

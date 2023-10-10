@@ -1,6 +1,6 @@
-import Film from '../types/Film';
+import IFilm from '../types/IFilm';
 
-const films: Film[] = [
+const films: IFilm[] = [
   {title: 'The Grand Budapest Hotel', poster: 'markup/img/the-grand-budapest-hotel-poster.jpg', genre: 'Drama', date: '2014'},
   {title: 'Fantastic Beasts: The Crimes of Grindelwald', poster: 'markup/img/fantastic-beasts-the-crimes-of-grindelwald.jpg'},
   {title: 'Bohemian Rhapsody', poster: 'markup/img/bohemian-rhapsody.jpg'},

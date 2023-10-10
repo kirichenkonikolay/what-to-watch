@@ -1,8 +1,8 @@
-interface Film {
+interface IFilm {
   title: string;
   genre?: string;
   poster: string;
   date?: string;
 }
 
-export default Film;
+export default IFilm;
