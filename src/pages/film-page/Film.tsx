@@ -4,6 +4,7 @@ import films from "../../utils/films";
 import UserBlock from "../../components/UserBlock";
 import FilmsList from "../../components/FilmsList";
 import IFilm from "../../types/IFilm";
+import Header from "../../components/Header";
 
 const Film: React.FC = () => {
   const similarFilms: IFilm[] = [];
@@ -22,17 +23,7 @@ const Film: React.FC = () => {
 
           <h1 className="visually-hidden">WTW</h1>
 
-          <header className="page-header film-card__head">
-            <div className="logo">
-              <a href="" className="logo__link">
-                <span className="logo__letter logo__letter--1">W</span>
-                <span className="logo__letter logo__letter--2">T</span>
-                <span className="logo__letter logo__letter--3">W</span>
-              </a>
-            </div>
-
-            <UserBlock />
-          </header>
+          <Header />
 
           <div className="film-card__wrap">
             <div className="film-card__desc">
