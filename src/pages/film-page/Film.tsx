@@ -1,18 +1,9 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import films from "../../utils/films";
-import UserBlock from "../../components/UserBlock";
-import FilmsList from "../../components/FilmsList";
-import IFilm from "../../types/IFilm";
 import Header from "../../components/Header";
+import MoreLikeThis from "../../components/MoreLikeThis";
 
 const Film: React.FC = () => {
-  const similarFilms: IFilm[] = [];
-
-  for (let i: number = 0; i < 4; i++) {
-    similarFilms.push(films[i]);
-  }
-
   return (
     <>
       <section className="film-card film-card--full">
@@ -103,12 +94,7 @@ const Film: React.FC = () => {
       </section>
 
       <div className="page-content">
-        <section className="catalog catalog--like-this">
-          <h2 className="catalog__title">More like this</h2>
-
-          <FilmsList films={similarFilms}></FilmsList>
-        </section>
-
+        <MoreLikeThis />
         <Footer />
       </div>
     </>
