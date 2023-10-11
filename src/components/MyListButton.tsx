@@ -1,11 +1,11 @@
 import React from "react";
 
 interface MyListButtonProps {
-  filmCount: number;
+  myFilmsCount: number;
 }
 
 const MyListButton: React.FC = (props: MyListButtonProps) => {
-  const {filmCount} = props;
+  const {myFilmsCount} = props;
 
   return (
     <button className="btn btn--list film-card__button" type="button">
@@ -13,7 +13,7 @@ const MyListButton: React.FC = (props: MyListButtonProps) => {
         <use xlinkHref="#add"></use>
       </svg>
       <span>My list</span>
-      <span className="film-card__count">{filmCount}</span>
+      <span className="film-card__count">{myFilmsCount}</span>
     </button>
   );
 }

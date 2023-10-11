@@ -18,9 +18,9 @@ const CatalogGenreList: React.FC = () => {
 
   return (
     <ul className="catalog__genres-list">
-      {genres.map((genre) => {
-        return <CatalogGenreItem title={genre} isActive={genre == activeGenre} />
-      })}
+      {genres.map((genre) => (
+        <CatalogGenreItem title={genre} isActive={genre == activeGenre} />
+      ))}
     </ul>
   );
 }

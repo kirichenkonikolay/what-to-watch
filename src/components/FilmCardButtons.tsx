@@ -6,7 +6,7 @@ const FilmCardButtons: React.FC = () => {
   return (
     <div className="film-card__buttons">
       <PlayButton />
-      <MyListButton filmCount={9} />
+      <MyListButton myFilmsCount={9} />
     </div>
   );
 }
