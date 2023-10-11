@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Logo from "../../components/Logo";
-import FilmsList from "../../components/FilmsList";
+import FilmList from "../../components/FilmList";
 import films from "../../utils/films";
 import UserBlock from "../../components/UserBlock";
 
@@ -16,7 +16,7 @@ const MyListPage: React.FC = () => {
 
       <section className="catalog">
         <h2 className="catalog__title visually-hidden">Catalog</h2>
-        <FilmsList films={films} />
+        <FilmList films={films} />
       </section>
 
       <Footer />

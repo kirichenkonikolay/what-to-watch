@@ -1,10 +1,10 @@
 import React from "react";
 
-interface RatingStarProps {
+interface RatingStarItemProps {
   starCount: number;
 }
 
-const RatingStarItem: React.FC = (props: RatingStarProps) => {
+const RatingStarItem: React.FC = (props: RatingStarItemProps) => {
   const {starCount} = props;
 
   return (

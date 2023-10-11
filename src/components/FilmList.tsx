@@ -6,7 +6,7 @@ interface FilmListProps {
   films: IFilm[];
 }
 
-const FilmsList: React.FC = (props: FilmListProps) => {
+const FilmList: React.FC = (props: FilmListProps) => {
   return (
     <div className="catalog__films-list">
       {props.films.map((film) => (
@@ -16,4 +16,4 @@ const FilmsList: React.FC = (props: FilmListProps) => {
   )
 }
 
-export default FilmsList;
+export default FilmList;

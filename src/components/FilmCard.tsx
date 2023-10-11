@@ -2,13 +2,13 @@ import React from "react";
 import Header from "./Header";
 import FilmCardButtons from "./FilmCardButtons";
 
-interface FilmCardBgProps {
+interface FilmCardProps {
   title: string;
   genre: string;
   date: string;
 }
 
-const FilmCard: React.FC = (props: FilmCardBgProps) => {
+const FilmCard: React.FC = (props: FilmCardProps) => {
   const {title, genre, date} = props;
 
   return (

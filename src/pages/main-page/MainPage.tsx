@@ -1,5 +1,5 @@
 import React from 'react';
-import FilmsList from '../../components/FilmsList';
+import FilmList from '../../components/FilmList';
 import Footer from "../../components/Footer";
 import films from "../../utils/films";
 import CatalogGenreList from "../../components/CatalogGenreList";
@@ -24,7 +24,7 @@ const MainPage: React.FC = (props: MainProps) => {
 
           <CatalogGenreList />
 
-          <FilmsList films={films} />
+          <FilmList films={films} />
 
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>

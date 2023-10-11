@@ -1,5 +1,5 @@
 import React from "react";
-import FilmsList from "./FilmsList";
+import FilmList from "./FilmList";
 import IFilm from "../types/IFilm";
 import films from "../utils/films";
 
@@ -13,7 +13,7 @@ const MoreLikeThis: React.FC = () => {
   return (
     <section className="catalog catalog--like-this">
       <h2 className="catalog__title">More like this</h2>
-      <FilmsList films={similarFilms}></FilmsList>
+      <FilmList films={similarFilms}></FilmList>
     </section>
   );
 }
