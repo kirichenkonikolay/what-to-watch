@@ -4,7 +4,7 @@ interface RatingStarProps {
   starCount: number;
 }
 
-const RatingStar: React.FC = (props: RatingStarProps) => {
+const RatingStarItem: React.FC = (props: RatingStarProps) => {
   const {starCount} = props;
 
   return (
@@ -15,4 +15,4 @@ const RatingStar: React.FC = (props: RatingStarProps) => {
   );
 }
 
-export default RatingStar;
+export default RatingStarItem;

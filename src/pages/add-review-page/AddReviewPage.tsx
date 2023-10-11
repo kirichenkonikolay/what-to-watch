@@ -1,6 +1,6 @@
 import React from 'react';
 import UserBlock from "../../components/UserBlock";
-import Rating from "../../components/Rating";
+import RatingStars from "../../components/RatingStars";
 
 const AddReviewPage: React.FC = () => {
   return(
@@ -37,7 +37,7 @@ const AddReviewPage: React.FC = () => {
 
       <div className="add-review">
         <form action="#" className="add-review__form">
-          <Rating />
+          <RatingStars />
 
           <div className="add-review__text">
             <textarea className="add-review__textarea" name="review-text" id="review-text"
