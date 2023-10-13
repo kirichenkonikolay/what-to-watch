@@ -1,10 +1,10 @@
-import React from "react";
-import RatingStarItem from "./RatingStarItem";
+import React from 'react';
+import RatingStarItem from './RatingStarItem';
 
 const RatingStars: React.FC = () => {
   const stars = [];
 
-  for (let i: number = 10; i > 0; i--) {
+  for (let i = 10; i > 0; i--) {
     stars.push(<RatingStarItem starCount={i} />);
   }
 
@@ -15,6 +15,6 @@ const RatingStars: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default RatingStars;

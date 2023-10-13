@@ -1,14 +1,12 @@
-import React from "react";
-import Logo from "./Logo";
-import UserBlock from "./UserBlock";
+import React from 'react';
+import Logo from './Logo';
+import UserBlock from './UserBlock';
 
-const Header: React.FC = () => {
-  return (
-    <header className="page-header film-card__head">
-      <Logo />
-      <UserBlock />
-    </header>
-  );
-}
+const Header: React.FC = () => (
+  <header className="page-header film-card__head">
+    <Logo />
+    <UserBlock />
+  </header>
+);
 
 export default Header;

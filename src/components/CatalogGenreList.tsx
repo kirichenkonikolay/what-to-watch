@@ -1,5 +1,5 @@
-import React from "react";
-import CatalogGenreItem from "./CatalogGenreItem";
+import React from 'react';
+import CatalogGenreItem from './CatalogGenreItem';
 
 const CatalogGenreList: React.FC = () => {
   const activeGenre = 'All genres';
@@ -19,10 +19,10 @@ const CatalogGenreList: React.FC = () => {
   return (
     <ul className="catalog__genres-list">
       {genres.map((genre) => (
-        <CatalogGenreItem title={genre} isActive={genre == activeGenre} />
+        <CatalogGenreItem key={genre} title={genre} isActive={genre === activeGenre} />
       ))}
     </ul>
   );
-}
+};
 
 export default CatalogGenreList;

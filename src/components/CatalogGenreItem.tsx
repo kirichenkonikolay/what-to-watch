@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface CatalogGenreItemProps {
   title: string;
@@ -7,8 +7,6 @@ interface CatalogGenreItemProps {
 
 const CatalogGenreItem: React.FC = (props: CatalogGenreItemProps) => {
   const {title, isActive = false} = props;
-
-  // TODO: придумать что-то с isActive
 
   if (isActive) {
     return (
@@ -23,6 +21,6 @@ const CatalogGenreItem: React.FC = (props: CatalogGenreItemProps) => {
       <a href="#" className="catalog__genres-link">{title}</a>
     </li>
   );
-}
+};
 
 export default CatalogGenreItem;

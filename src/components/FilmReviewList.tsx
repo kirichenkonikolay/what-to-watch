@@ -1,6 +1,6 @@
-import React from "react";
-import IReview from "../types/IReview";
-import Review from "./Review";
+import React from 'react';
+import IReview from '../types/IReview';
+import Review from './Review';
 
 interface FilmReviewListProps {
   reviews: IReview[];
@@ -14,6 +14,7 @@ const FilmReviewList: React.FC = (props: FilmReviewListProps) => {
       <div className="film-card__reviews-col">
         {reviews.map((review) => (
           <Review
+            key={review.id}
             text={review.text}
             author={review.author}
             date={review.date}
@@ -23,6 +24,6 @@ const FilmReviewList: React.FC = (props: FilmReviewListProps) => {
       </div>
     </div>
   );
-}
+};
 
 export default FilmReviewList;

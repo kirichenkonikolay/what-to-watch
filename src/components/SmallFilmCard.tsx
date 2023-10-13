@@ -17,7 +17,7 @@ const SmallFilmCard: React.FC = (props: FilmCardProps) => {
         <a className="small-film-card__link" href="">{title}</a>
       </h3>
     </article>
-  )
-}
+  );
+};
 
 export default SmallFilmCard;

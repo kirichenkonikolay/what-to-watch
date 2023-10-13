@@ -1,9 +1,9 @@
 import React from 'react';
 import FilmList from '../../components/FilmList';
-import Footer from "../../components/Footer";
-import films from "../../utils/films";
-import CatalogGenreList from "../../components/CatalogGenreList";
-import FilmCard from "../../components/FilmCard";
+import Footer from '../../components/Footer';
+import films from '../../utils/films';
+import CatalogGenreList from '../../components/CatalogGenreList';
+import FilmCard from '../../components/FilmCard';
 
 interface MainProps {
   title: string;
@@ -34,8 +34,8 @@ const MainPage: React.FC = (props: MainProps) => {
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
 export default MainPage;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface MyListButtonProps {
   myFilmsCount: number;
@@ -16,6 +16,6 @@ const MyListButton: React.FC = (props: MyListButtonProps) => {
       <span className="film-card__count">{myFilmsCount}</span>
     </button>
   );
-}
+};
 
 export default MyListButton;

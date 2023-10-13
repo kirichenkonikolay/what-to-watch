@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface FilmRatingProps {
   score: string;
@@ -18,6 +18,6 @@ const FilmRating: React.FC = (props: FilmRatingProps) => {
       </p>
     </div>
   );
-}
+};
 
 export default FilmRating;

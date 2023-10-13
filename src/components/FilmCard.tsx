@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "./Header";
-import FilmCardButtons from "./FilmCardButtons";
+import React from 'react';
+import Header from './Header';
+import FilmCardButtons from './FilmCardButtons';
 
 interface FilmCardProps {
   title: string;
@@ -25,7 +25,8 @@ const FilmCard: React.FC = (props: FilmCardProps) => {
         <div className="film-card__info">
           <div className="film-card__poster">
             <img src="markup/img/the-grand-budapest-hotel-poster.jpg" alt="The Grand Budapest Hotel poster" width="218"
-                 height="327"/>
+              height="327"
+            />
           </div>
 
           <div className="film-card__desc">
@@ -41,6 +42,6 @@ const FilmCard: React.FC = (props: FilmCardProps) => {
       </div>
     </section>
   );
-}
+};
 
 export default FilmCard;

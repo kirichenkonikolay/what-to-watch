@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface FilmCardTextProps {
   text: string;
@@ -18,6 +18,6 @@ const FilmCardText: React.FC = (props: FilmCardTextProps) => {
       <p className="film-card__starring"><strong>Starring: {starringStr} and other</strong></p>
     </div>
   );
-}
+};
 
 export default FilmCardText;
