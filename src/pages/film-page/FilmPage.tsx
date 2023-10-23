@@ -6,8 +6,12 @@ import FilmCardButtons from '../../components/FilmCardButtons';
 import FilmRating from '../../components/FilmRating';
 import FilmCardText from '../../components/FilmCardText';
 import FilmCardNav from '../../components/FilmCardNav';
+import {useParams} from 'react-router-dom';
 
 const FilmPage: React.FC = () => {
+  const params = useParams();
+  console.log(params.id);
+
   const text = `In the 1930s, the Grand Budapest Hotel is a popular European ski resort, presided over by concierge
   Gustave H. (Ralph Fiennes). Zero, a junior lobby boy, becomes Gustave's friend and protege.
 

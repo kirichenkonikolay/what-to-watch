@@ -5,14 +5,11 @@ import films from '../../utils/films';
 import CatalogGenreList from '../../components/CatalogGenreList';
 import FilmCard from '../../components/FilmCard';
 
-interface MainProps {
-  title: string;
-  genre: string;
-  date: string;
-}
-
-const MainPage: React.FC = (props: MainProps) => {
-  const {title, genre, date} = props;
+const MainPage: React.FC = () => {
+  const film = films[0];
+  const title = film.title;
+  const genre = film.genre;
+  const date = film.date;
 
   return (
     <>
