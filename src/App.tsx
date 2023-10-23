@@ -7,6 +7,7 @@ import FilmPage from "./pages/film-page/FilmPage";
 import AddReviewPage from "./pages/add-review-page/AddReviewPage";
 import PlayerPage from "./pages/player-page/PlayerPage";
 import NotFoundPage from "./pages/not-found-page/NotFoundPage";
+import PrivateRoute from "./components/PrivateRoute";
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,11 @@ const App: React.FC = () => {
         <Route path='/'>
           <Route index element={<MainPage />} />
           <Route path='login' element={<SignInPage />} />
-          <Route path='mylist' element={<MyListPage />}></Route>
+          <Route path='mylist' element={
+            <PrivateRoute>
+              <MyListPage />
+            </PrivateRoute>
+          }></Route>
           <Route path='films/:id'>
             <Route index element={<FilmPage />} />
             <Route path='review' element={<AddReviewPage />} />
